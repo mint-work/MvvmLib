@@ -46,7 +46,7 @@ dependencies {
     api rootProject.ext.dependencies["viewpager2"]
     //ktx扩展库
     api rootProject.ext.dependencies["ktx"]
-    api rootProject.ext.dependencies["ktx-jdk"]
+//    api rootProject.ext.dependencies["ktx-jdk"]
     api rootProject.ext.dependencies["ktx-coroutines"]
     api rootProject.ext.dependencies["ktx-coroutines-android"]
     //room
@@ -97,6 +97,8 @@ dependencies {
     api rootProject.ext.dependencies["photoView"]
     //缓存
     api rootProject.ext.dependencies["mmkv"]
+    //XXPermissions权限请求
+    api files('libs/XXPermissions-18.63.aar')
 }
 repositories {
     mavenCentral()

@@ -1,7 +1,8 @@
+def releaseTime() {
+    return new Date().format("yyyy-MM-dd HH:mm:ss", TimeZone.getTimeZone("UTC"))
+}
+
 ext {
-    //查看依赖树   ./gradlew -q app:dependencies
-    //查看错误信息 ./gradlew compileDebug --stacktrace -info      ./gradlew compileDebugSource --stacktrace -info
-    //应用配置
     android = [
             compileSdkVersion: 30,
             buildToolsVersion: "30.0.3",
@@ -10,7 +11,16 @@ ext {
             kotlinVersion    : "1.6.10",
             versionCode      : 100,
             versionName      : "1.0.0",
-            applicationId    : "com.library.common"
+            applicationId    : "com.library.common",
+            systemTime       : releaseTime(),
+            appName          : "MvvmLib",
+    ]
+    //签名文件配置
+    sign = [
+            path             : "",    //签名文件的路径
+            storePassword    : "",    //签名文件的密码
+            keyAlias         : "",    //密钥别名
+            keyPassword      : "",    //密钥密码
     ]
 
     version = [

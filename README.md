@@ -5,9 +5,6 @@
 模仿朴朴APP样式，接口部分个人开发，只提供测试使用。所有验证码默认 **0000**。
 [API代码](https://github.com/yangbangwei/api)
 
-## 效果截图 
-<img src="images/snapshot1.png" width="30%"/><img src="images/snapshot2.png" width="30%"/><img src="images/snapshot3.png" width="30%"/>
-<img src="images/snapshot4.png" width="30%"/><img src="images/snapshot5.png" width="30%"/>
 
 ## 第三方库
 1. [`Okhttp` Okhttp网络访问框架](https://github.com/square/okhttp)
